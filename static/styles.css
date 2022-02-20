@@ -1,0 +1,355 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/465630.jpg");
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.button1:hover {
+  opacity:1;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+}
+
+.signupbtn {
+    padding: 14px 10px;
+    background-color: #158115;
+    background-size: 30px;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 340px;
+
+}
+
+.cancelbtn {
+    padding: 14px 10px;
+    background-color: #f44336;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 340px;
+
+}
+
+.clearfix {
+    width: 400px;
+}
+
+.input1 {
+    padding-left: 200%
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 50px;
+	margin-left: 17%;
+
+}
+
+.modal-content {
+    text-align: center;
+    background-color: #fefefe;
+    margin-top: 5%;
+    border: 1px solid #888;
+    width: 60%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    pointer-events: auto;
+    background-clip: padding-box;
+    outline: 0;
+}
+
+form.modal-content {
+    width: 1100px;
+    left: 8%;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 85px;
+  top: 85px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 50px) {
+  .cancelbtn, .signupbtn {
+     width: 20%;
+  }
+}
+
+.button1 {
+	width: auto;
+	float: right;
+    margin-top: 8px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+	margin-right: 20px;
+	font-size: 15px;
+	border-radius: 30%;
+    background-image: linear-gradient(to right, #16bd56 0%, #8fd3f4 51%, #84adfa 100%);
+}
+
+.button1:hover {
+	background-position: right center;
+}
+
+
+/*navigation menu*/
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  /*background-color: #e9e9e9;*/
+  background-image: linear-gradient(150deg, blue, yellow);
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: #2196F3;
+    color: white;
+	border-radius: 30%;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.topnav a.active2 {
+  	border-radius: 30%;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.topnav a.active3 {
+  	border-radius: 30%;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.topnav a.active4 {
+  	border-radius: 30%;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.input2 {
+    display: inline-block;
+}
+
+.policy {
+    display: block;
+    margin-bottom: 65px;
+    margin-left: 10px;
+}
+
+.policy2 {
+    margin-bottom: 80px;
+}
+
+
+.icon {
+  margin-left: 30px;
+  -webkit-animation:glide 2s ease-in-out alternate infinite;
+   position:absolute;
+}
+
+.icon:hover {
+  animation-name: icon_example;
+  animation-duration: 5s;
+  animation-iteration-count: 100;
+}
+
+@keyframes icon_example {
+  0%   {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color: #0a0a7c;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+
+@-webkit-keyframes glide  {
+   from {
+      left:50px;
+      top:0px;
+   }
+
+   to {
+      left:0px;
+      top:0px;
+   }
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.quote {
+}
+
+.posts_background {
+    margin-left: 30px;
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(130, 255, 91));
+}
+
+.title_posts {
+    text-align: center;
+    font-style: italic;
+}
+
+.back_home {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.back_home:hover {
+    color: #2078ce;
+}
+
+.new_post {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.new_post:hover {
+    color: #2c8115;
+}
+
+.icon_like {
+    background: none;
+    background-size: 100px;
+    float: left;
+}
+
+.icon_like:hover {
+    opacity: 0.7;
+}
+
+.icon_dislike {
+    background: none;
+    background-size: 100px;
+    float: left;
+}
+
+.icon_dislike:hover {
+    opacity: 0.7;
+}
+
+.button_like {
+    width: 80px;
+    margin-bottom: 30px;
+    background-color: #e2f1d6;
+}
+
+.new_post {
+    margin-left: 30px;
+    height: 200px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(130, 255, 91));
+}
+
+#title {
+    font-size: 30px;
+}
+
+body{
+  margin: 0;
+}
+
+.image1 {
+  width:100%;
+  height:1000px;
+  transition: background-image 3s ease-in-out;
+  background-image:url("https://i.pinimg.com/originals/5a/92/91/5a9291527c52000b0e9b134a0e8e03e2.jpg");
+}
+
+.image1:hover {
+  background-image:url("https://f.vividscreen.info/soft/6f79b7d0c34b669ebb0b67a43a9c93bc/Office-Business-Park-1920x1080.jpg");
+}
+
+.text1 {
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  padding-left: 20px;
+}
+
+.text1:hover {
+  color: #158115;
+}
+
+.quote {
+  font-family:'Times New Roman', Times, serif;
+  text-align: center;
+}

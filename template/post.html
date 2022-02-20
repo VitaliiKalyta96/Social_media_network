@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialMedia</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body class="posts_background">
+    <div>
+        <br>
+        <div>
+            <a class="back_home" href="/">Back to Home</a>
+            <h1 class="title_posts">All Posts </h1>
+            <a style="display: inline" class="new_post" href="/post/new">+ New Post</a>
+        </div>
+        <br>
+        <hr>
+        {% for post in post%}
+        <h2>{{post.title}}</h2>
+
+        {% if post.author %}
+        <p>Written By {{post.posted_by}} on {{post.posted_on}}</p>
+        {% else%}
+        <p>Written by Anonymous on {{post.posted_on}}</p>
+        {% endif %}
+        <p style="white-space: pre-wrap">{{post.content}}</p>
+        <br>
+
+<!--        <button class="button_like">-->
+<!--        <button class="button_like">-->
+
+        <div>
+            <button class="button_like" name="submit_button1" value="like"><img class="icon_like" height="40px" width="40px" src="https://image.similarpng.com/very-thumbnail/2020/11/Green-like-button-icon-design-on-transparent-background-PNG.png"></button>
+            <button class="button_like" name="submit_button2" value="dislike">  <img class="icon_dislike" height="40px" width="40px" src="https://image.similarpng.com/very-thumbnail/2020/11/Red-dislike-button-icon-design-on-transparent-PNG.png"></button>
+        </div>
+        <a href="/post/delete/{{post.id}}"><img
+                src="https://qph.fs.quoracdn.net/main-qimg-83c6de25ed91d13a4f09fb5f11ca8853" height="40px" width="40px"></a>
+        <a href="/post/edit/{{post.id}}"><img
+                src="https://www.2g-eng.com/wp-content/uploads/2016/01/design-engineering-icon-small.png" height="40px"
+                width="40px"></a>
+        <hr>
+        {% endfor %}
+    </div>
+</body>
+</html>
