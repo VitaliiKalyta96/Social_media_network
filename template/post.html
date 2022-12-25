@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SocialMedia</title>
     <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="posts_background">
     <div>
@@ -26,13 +27,22 @@
         <p style="white-space: pre-wrap">{{post.content}}</p>
         <br>
 
-<!--        <button class="button_like">-->
-<!--        <button class="button_like">-->
-
         <div>
-            <button class="button_like" name="submit_button1" value="like"><img class="icon_like" height="40px" width="40px" src="https://image.similarpng.com/very-thumbnail/2020/11/Green-like-button-icon-design-on-transparent-background-PNG.png"></button>
-            <button class="button_like" name="submit_button2" value="dislike">  <img class="icon_dislike" height="40px" width="40px" src="https://image.similarpng.com/very-thumbnail/2020/11/Red-dislike-button-icon-design-on-transparent-PNG.png"></button>
+            <button class="button_like">
+                <img class="icon_like" id="icon" height="40px" width="40px" src="https://image.similarpng.com/very-thumbnail/2020/11/Green-like-button-icon-design-on-transparent-background-PNG.png">
+                <span id="count">0</span> Like
+            </button>
+            <button class="button_dislike">
+                <img class="icon_dislike" id="icon-2" height="40px" width="40px" src="https://image.similarpng.com/very-thumbnail/2020/11/Red-dislike-button-icon-design-on-transparent-PNG.png">
+                <span id="count-2">0</span> Dislike
+            </button>
+
+<!--            <button class="like_btn">-->
+<!--                <span id="icon"><i class="fa-solid fa-thumbs-up"></i></span>-->
+<!--                <span id="count">0</span> Like-->
+<!--            </button>-->
         </div>
+
         <a href="/post/delete/{{post.id}}"><img
                 src="https://qph.fs.quoracdn.net/main-qimg-83c6de25ed91d13a4f09fb5f11ca8853" height="40px" width="40px"></a>
         <a href="/post/edit/{{post.id}}"><img
@@ -41,5 +51,6 @@
         <hr>
         {% endfor %}
     </div>
+    <script src="static/js/buttons.js"></script>
 </body>
 </html>
